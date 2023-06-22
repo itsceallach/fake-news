@@ -1,0 +1,288 @@
+body {
+  background-color: #c3b091;
+  margin: 0px;
+	width: 100%;
+	height: 100%;
+  /* display: flex; */
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  font-family: 'Noticia Text', serif;
+  background: url('https://static.vecteezy.com/system/resources/previews/000/121/106/original/vector-old-paper-texture-background.jpg');
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Noticia Text', serif;
+  font-size: 50px;
+  color: #6e4d2b;
+  text-shadow:
+        0.01em 0 #412203,
+        0 0.01em #412203,
+        -0.01em 0 #412203,
+        0 -0.01em #412203;
+}
+p {
+  /* text-align: center; */
+  font-family: 'Noticia Text', serif;
+  color: #6e4d2b;
+}
+h2 {
+  font-size: 3rem;
+	font-weight: 700;
+	border: 0.25rem solid #555;
+	display: inline-block;
+	padding: 1rem;
+	text-transform: uppercase;
+	border-radius: 1rem;
+	font-family: '';
+  -webkit-mask-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/8399/grunge.png');
+  -webkit-mask-size: 944px 604px;
+  mix-blend-mode: multiply;
+  color: #D23;
+  border: 0.5rem double #D23;
+  transform: rotate(3deg);
+	-webkit-mask-position: 2rem 3rem;
+  font-size: 2rem; 
+}
+
+h2.real {
+  color: #0A9928;
+	border: 0.5rem solid #0A9928;
+	-webkit-mask-position: 20rem 50rem;
+	transform: rotate(-10deg);
+  border-radius: 0;
+}
+.bgnavbar {
+  background-color: #dbc1ac;
+  font-size: 20px;
+  width: 100%;
+  border-bottom: 5px solid #967259;
+  position:absolute;
+  top:0px;}
+
+.navbar {
+  float: right;
+  display: inline-block;
+  margin: 0px 100px;
+}
+.nav {
+  vertical-align: middle;
+  display: inline-block;
+  color: white;
+}
+a.nav:link {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a.nav:hover, a.nav:active {
+  background-color: #967259;
+}
+.wrapper{
+  border-top-left-radius: 37px 140px;
+  border-top-right-radius: 23px 130px;
+  border-bottom-left-radius: 110px 19px;
+  border-bottom-right-radius: 120px 24px;
+  display: block;
+  position:relative;
+  border: solid 10px #503d1f;
+  padding: 40px 60px;
+  max-width: 800px;
+  width: 70%;
+  margin: 100px auto 0;
+  font-size: 17px;
+  line-height: 28px;
+  box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
+  transition: all 0.13s ease-in;
+  background-color: rgba(161, 139, 100, 0.2);
+}
+.input {
+  margin: 0 auto;
+  padding: 30px;
+  text-align: center;
+}
+
+.paper {
+    position: relative;
+    max-width: 800px;
+    min-width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    background: rgb(219, 203, 179);
+    opacity: 50%;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.7);
+    overflow: hidden;
+}
+.paper:before {
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0; left: 0;
+    width: 60px;
+    background-size: 30px 30px;
+    box-sizing: border-box;
+}
+
+.paper-content {
+    position: absolute;
+    top: 30px; right: 30px; bottom: 30px; left: 40px;
+    background: linear-gradient(transparent, transparent 28px, #bda989 28px);
+    background-size: 30px 30px;
+}
+.paper-content textarea {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  line-height: 30px;
+  padding: 0 10px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font-family: 'Handlee', cursive;
+  font-weight: bold;
+  font-size: 18px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+#imgs{
+  width: 300px;
+  font-size: 18px;
+}
+.button-30 {
+  align-items: center;
+  appearance: none;
+  background-color: #766242;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#dbcbb3 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #dbcbb3;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: 'Noticia Text', serif;
+  height: 50px;
+  width: 150px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding: 10px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 25px;
+}
+
+.button-30:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #ffffff 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #ffffff 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+/* CSS */
+.button-4 {
+  margin-left: 10px;
+  appearance: none;
+  background-color: #967848;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+.button-4:hover {
+  background-color: #F3F4F6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+.button-4:disabled {
+  background-color: #FAFBFC;
+  border-color: rgba(27, 31, 35, 0.15);
+  color: #959DA5;
+  cursor: default;
+}
+
+.button-4:active {
+  background-color: #EDEFF2;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  transition: none 0s;
+}
+
+.button-4:focus {
+  outline: 1px transparent;
+}
+
+.button-4:before {
+  display: none;
+}
+
+.button-4:-webkit-details-marker {
+  display: none;
+}
+.commfield {
+  display: flex;
+  align-items: center;
+}
+.fancy {
+  --b: 6px;   /* control the border thickness */
+  --w: 50vw;  /* control the width of the line*/
+  --g: 15px;  /* control the gap */
+  --c: #967848;
+ 
+  width: fit-content;
+  padding: 0 1em;
+  line-height: 1.6em;
+  border: 1px solid;
+  color: #fff;
+  background: 
+    conic-gradient(from   45deg at left ,var(--c) 25%,#0000 0) 0,
+    conic-gradient(from -135deg at right,var(--c) 25%,#0000 0) 100%;
+  background-size: 51% 100%;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  border-image: 
+     linear-gradient(
+       #0000      calc(50% - var(--b)/2),
+       var(--c) 0 calc(50% + var(--b)/2),
+       #0000    0) 
+    1/0 var(--w)/calc(var(--w) + var(--g));
+  margin-inline: auto;
+}
+.about {
+  text-align: center;
+}

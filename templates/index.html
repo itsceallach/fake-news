@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noticia+Text:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- <div class="bgnavbar">
+        <div class="navbar">
+            <a href="#" class="nav">ABOUT US</a>
+            <a href="#" class="nav"></a>
+            <a href="#" class="nav"></a>
+            <a href="#" class="nav"></a>
+        </div>
+    </div> -->
+    <div class="wrapper">
+        <h1>Filipino Fake News Detector</h1>
+        <p>Our website is a project which aims to help online readers to 
+            identify misinformation in the cyber world in an easier fashion. </p>
+
+        <form action="{{ url_for('predict')}}" method="POST" class="input">
+            <div class="paper">
+                <div class="paper-content">  
+                    <textarea name="message" style="font-size: 18pt" placeholder="Write your prompt here..."></textarea>
+                </div>
+            </div>
+
+            <div>
+                <!-- <input type="file" class="button-30" id="imgs"></input> -->
+            <br><br>
+            <button class="button-30" type="submit">PREDICT</button>
+            </div>
+            
+
+            <div class="results">
+                <p>{% if prediction == [0]%}</p>
+                    <h2>Fake News</h2>
+    
+                <p>{% elif prediction == [1]%}</p>
+    
+                    <h2 class="real""><b>Real News</b></h2>
+                <p>{% endif %}</p>
+            </div>
+        </form>
+
+        
+        
+            
+        </form>
+        <p>How would you classify your input? 
+            (Your participation will help with the improvement of the application by helping us build a better model.)</p>
+        <form action="/" method="post">
+            <textarea id="prompt" name="prompt" style="width: 80%; border-radius: 5px" placeholder="Write your previous prompt here:"></textarea><br>
+            <input type="radio" name="answer" value="Fake" required>Fake <br>
+            <input type="radio" name="answer" value="Skeptical">Skeptical <br>
+            <input type="radio" name="answer" value="Truth">Truth <br>
+
+            <p>Do you have any comments?</p>
+            <div class="commfield">
+                <label for="comments">Comments: </label>
+                <textarea id="comments" name="comments" style="width: 400px; border-radius: 5px"></textarea>
+                <input type="submit" class="button-4" name="submit" value="Submit">
+            </div>
+            </form>
+            
+    </div>
+    <div class="about">
+        <h3 class="fancy">About Us</h3>
+            <p>This website is a machine learning project developed to aid Filipino internet news consumers to identify 
+                reliable and unreliable news sources online.</p>
+    </div>
+
+    
+</body>
+</html>
